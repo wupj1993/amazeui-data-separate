@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Widget</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="i/favicon.png">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 不提供支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+
+<script type="text/x-handlebars-template" id="my-tpl">
+    {{>header header}}
+    {{>menu menu}}
+    {{>slider slider}}
+    {{>list_news list1}}
+    {{>gallery gallery}}
+    {{>list_news list2}}
+    {{>footer footer}}
+    {{>navbar navbar}}
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.js"></script>
+<script src="js/handlebars.min.js"></script>
+<script src="js/amazeui.widgets.helper.js"></script>
+<script>
+    $(function() {
+        alert("start");
+        $.ajax({
+            type: "GET",
+            url: "json/data.json",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function(res){
+                alert(JSON.stringify(res));
+                var $tpl = $('#my-tpl'),
+                        tpl = $tpl.text(),
+                        template = Handlebars.compile(tpl),
+                        html = template(res);
+                $tpl.before(html);
+                $.each(['slider', 'menu', 'gallery', 'footer', 'navbar'], function(i, m) {
+                    var module = $.AMUI[m];
+                    module && module.init && module.init();
+                })
+            },
+            error:function(res){
+              alert("error");
+            }
+
+        });
+
+
+
+    });
+
+
+
+
+    /*
+     // 如果 Handlebars 渲染出来的 HTML 在 DOM ready 事件之后插入文档，需要手动初始化组件
+
+     */
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+{
+  "header": {
+    "content": {
+      "title": "Amaze UI"
+    }
+  },
+  "menu": {
+    "options": {
+      "cols": "1"
+    },
+    "content": [
+      {
+        "link": "##",
+        "title": "公司",
+        "subCols": 2,
+        "channelLink": "进入栏目 »",
+        "subMenu": [
+          {
+            "link": "##",
+            "title": "公司"
+          },
+          {
+            "link": "##",
+            "title": "人物"
+          },
+          {
+            "link": "##",
+            "title": "趋势"
+          },
+          {
+            "link": "##",
+            "title": "投融资"
+          },
+          {
+            "link": "##",
+            "title": "创业公司"
+          },
+          {
+            "link": "##",
+            "title": "创业人物"
+          }
+        ]
+      },
+      {
+        "link": "##",
+        "title": "人物",
+        "subCols": 3,
+        "subMenu": [
+          {
+            "link": "##",
+            "title": "公司"
+          },
+          {
+            "link": "##",
+            "title": "人物"
+          },
+          {
+            "link": "##",
+            "title": "趋势"
+          },
+          {
+            "link": "##",
+            "title": "投融资"
+          },
+          {
+            "link": "##",
+            "title": "创业公司"
+          },
+          {
+            "link": "##",
+            "title": "创业人物"
+          }
+        ]
+      },
+      {
+        "link": "#c3",
+        "title": "趋势",
+        "subCols": 4,
+        "channelLink": "泥煤 »",
+        "subMenu": [
+          {
+            "link": "##",
+            "title": "公司"
+          },
+          {
+            "link": "##",
+            "title": "人物"
+          },
+          {
+            "link": "##",
+            "title": "趋势"
+          },
+          {
+            "link": "##",
+            "title": "投融资"
+          },
+          {
+            "link": "##",
+            "title": "创业公司"
+          },
+          {
+            "link": "##",
+            "title": "创业人物"
+          }
+        ]
+      },
+      {
+        "link": "##",
+        "title": "投融资",
+        "subCols": 3,
+        "subMenu": [
+          {
+            "link": "##",
+            "title": "公司"
+          },
+          {
+            "link": "##",
+            "title": "人物"
+          },
+          {
+            "link": "##",
+            "title": "趋势"
+          },
+          {
+            "link": "##",
+            "title": "投融资"
+          },
+          {
+            "link": "##",
+            "title": "创业公司"
+          },
+          {
+            "link": "##",
+            "title": "创业人物"
+          }
+        ]
+      },
+      {
+        "link": "##",
+        "title": "创业公司"
+      },
+      {
+        "link": "##",
+        "title": "创业人物"
+      }
+    ],
+    "theme": "offcanvas1"
+  },
+  "slider": {
+    "theme": "a2",
+    "content": [
+      {
+        "img": "http://s.amazeui.org/media/i/demos/bing-1.jpg"
+      },
+      {
+        "img": "http://s.amazeui.org/media/i/demos/bing-2.jpg"
+      },
+      {
+        "img": "http://s.amazeui.org/media/i/demos/bing-3.jpg"
+      },
+      {
+        "img": "http://s.amazeui.org/media/i/demos/bing-4.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "options": {
+      "modal": true,
+      "techSupportCo": "XXX",
+      "techSupportSite": "http://www.yunshipei.com/"
+    },
+    "content": {
+      "owner": "云适配",
+      "companyInfo": [
+        {
+          "detail": "CopyRight©2013  AllMobilize Inc."
+        },
+        {
+          "detail": "京ICP备13033158"
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "options": {
+      "cols": "4",
+      "iconpos": "top"
+    },
+    "content": [
+      {
+        "title": "一键拨号",
+        "link": "tel:123456789",
+        "icon": "phone",
+        "dataApi": ""
+      },
+      {
+        "title": "一键分享",
+        "link": "",
+        "icon": "share-square-o",
+        "dataApi": "data-am-navbar-share"
+      },
+      {
+        "title": "二维码",
+        "link": "",
+        "icon": "QRCode",
+        "dataApi": "data-am-navbar-qrcode"
+      },
+      {
+        "title": "关于我们",
+        "link": "http://yunshipei.com",
+        "icon": "user-md",
+        "dataApi": ""
+      },
+      {
+        "title": "下载说明",
+        "link": "http://yunshipei.com",
+        "icon": "download",
+        "dataApi": ""
+      },
+      {
+        "title": "联系我们",
+        "link": "http://yunshipei.com",
+        "icon": "location-arrow",
+        "dataApi": ""
+      }
+    ]
+  }
+}
